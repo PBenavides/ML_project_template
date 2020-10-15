@@ -1,6 +1,3 @@
-# MNIST_to_prod
-MNIST project to deployment
+# Machine Learning Project Template
 
-### Metrics
-
-The metric that this project evaluates are a combination of accuracy and F1-score
+Here is the way which I arrange my ML projects. This will be in constant development since the requirements i'll see. From testing purposes MNIST dataset is added to the project, but this could change through time. 
