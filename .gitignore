@@ -1,6 +1,9 @@
 #Large Files
 mnist_train_folds.csv
 
+#Enviroment
+ml_env/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

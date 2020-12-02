@@ -13,7 +13,6 @@ def run(fold,model):
     fold: Number of fold wanted to train
     model: model wanted to train
     """
-
     #read the training data with folds
     df = pd.read_csv("input/mnist_train_folds.csv")
     #train_data is where kfold is different to actual fold number

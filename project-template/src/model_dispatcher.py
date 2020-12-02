@@ -5,8 +5,8 @@ from sklearn.tree import DecisionTreeClassifier
 
 models = {"decision_tree_gini": DecisionTreeClassifier(
     criterion="gini"
-),
-"decision_tree_entropy" : DecisionTreeClassifier(
-    criterion="entropy"
-)
-}
+    ),
+    "decision_tree_entropy" : DecisionTreeClassifier(
+        criterion="entropy"
+    )
+        }
