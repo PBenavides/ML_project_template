@@ -4,19 +4,28 @@ Here is the way how I arrange my ML projects. This will be in constant developme
 
 
 ## Execute
-You can execute the ML-Project with
+You can execute the ML-Project with src/main.py specifying the model in src/model_dispatcher.py
 ```
-sh run.sh
+#In model_dispatcher.py:
+
+models = {"decision_tree_gini": DecisionTreeClassifier(
+    criterion="gini"
+    ),
+    "decision_tree_entropy" : DecisionTreeClassifier(
+        criterion="entropy"
+    )
+        }
 ```
+
+Then you can execute from main.py
+
+```
+python project-template/src/main.py --fold 0 -- model decision_tree_gini
+```
+
+Or also, you can append all the criterias on run.sh
 
 ## Usage
 This is a Template. All the Preprocessing was made as practice as possible.
-
-## Maintainers 👷
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/PBenavides"><img src="https://avatars0.githubusercontent.com/u/40007882?s=460&u=04420827cd14609e8a625a84b5101ab36b239e6d&v=4" width="100px;" alt="PBenavides"/><br /><sub>PBenavides</b></sub></a><br /><a href="#" title="Code">💻</a></td>
-  </tr>
-</table>
 
 ---
