@@ -23,7 +23,7 @@ def preprocessing_data(df):
     df['P_embarque'].fillna('S',inplace=True)
     df['P_embarque'].fillna(df['P_embarque'].mode(), inplace=True)
     df['Tarifa'].fillna(df['Tarifa'].mean(),inplace=True)
-
+    df.drop(['IdPasajero','Name','Ticket','Cabin'],axis=1, inplace=True)
     #Dealing with outliers
     outliers_to_repl = df[df['Tarifa'] > df['Tarifa'].quantile(.95)].index
     df.loc[outliers_to_repl, 'Tarifa'] = df['Tarifa'].quantile(.95)

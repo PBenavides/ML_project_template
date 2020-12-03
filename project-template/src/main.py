@@ -75,7 +75,7 @@ def run(fold,model):
 
     #saving the model
     joblib.dump(clf,
-    os.path.join(config.MODEL_OUTPUT, f"dt_{fold}.bin"))
+    os.path.join(config.MODEL_OUTPUT, f"dt_{fold}_{model}.bin"))
 
 if __name__=="__main__":
     #we will specify arguments to run from a shell scripting.
