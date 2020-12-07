@@ -2,7 +2,6 @@
 
 Here is the way how I arrange my ML projects. This will be in constant development since the requirements and good practices that i'll see. As an example I'm using Titanic dataset, but this would change throught time. 
 
-
 ## Execute
 You can execute the ML-Project with src/main.py specifying the model in src/model_dispatcher.py
 ```
